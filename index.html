@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://openlayers.org/en/v6.6.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 600px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://openlayers.org/en/v6.6.1/build/ol.js"></script>
+    
+    <title>OpenLayers Drag & Drop</title>
+  </head>
+  <body>
+      <div>
+        
+          <span id="drag1" style="cursor: move;" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69"> Drag Me 1 </span>
+          <span id="drag2" style="cursor: move;" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69"> Drag Me 2 </span>
+      </div>  
+      <div id="map" class="map" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <script src="script.js"></script>
+  </body>
+</html>
